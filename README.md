@@ -42,7 +42,7 @@ or local file location:
 $0.00
 value, $0.00
 
-please view Usage sections for an example.
+please view Usage section for an example.
 ```
 
 #### Remote Option:
