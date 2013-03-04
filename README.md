@@ -11,8 +11,7 @@ $ bundle install
 ```
 
 #### Usage:
-Given a file `menu.txt` containing:
-
+Given a file `menu.txt` containing a file in the following format:
 ```
 $15.05
 mixed fruit,$2.15
@@ -25,6 +24,11 @@ sampler plate,$5.80
 
 #### Step 1:
 ```
-from /wallet_to_table type:
-cd /bin/ && ./solve.rb
+from /wallet_to_table directory:
+$ cd /bin/ && ./solve.rb
 ```
+
+#### Step 2:
+```
+At Prompt:
+enter a location of a menu file.
