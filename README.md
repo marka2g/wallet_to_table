@@ -1,5 +1,7 @@
 ## From Your Wallet To The Table
-### This is a solution to a knapsack-type problem.  The code solves the problem dynamically with memoization.
+### This application will find the most efficient combination of menu items to buy given the amount of money in your wallet.
+
+##### The code solves the problem dynamically with memoization.
 
 #### To Begin:
 ```
@@ -21,5 +23,8 @@ mozzarella sticks,$4.20
 sampler plate,$5.80
 ```
 
-This application will find the most efficient combination of menu items to buy given the amount of money in your wallet.
-
+#### Step 1:
+```
+from /wallet_to_table type:
+cd /bin/ && ./solve.rb
+```
