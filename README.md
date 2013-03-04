@@ -32,8 +32,9 @@ $ cd /bin/ && ./solve.rb
 ```
 At Prompt:
 enter a location of a menu file as a string. e.g.
-```
+
 a url:
 `http://www.tablexi.com/menu.txt`
 or local file location:
 `/Users/<usename>/path_to_text_file`
+```
