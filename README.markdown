@@ -5,4 +5,4 @@ $ git@github.com:marka2g/tablexi.git
 $ cd on_the_table
 $ bundle install
 
-#### To Begin:
+#### :
