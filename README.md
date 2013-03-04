@@ -42,7 +42,6 @@ Note: Text file must be in the following format.
 ```
 $0.00
 value, $0.00
-```
 
 please view Usage section for an example.
 ```
