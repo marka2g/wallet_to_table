@@ -36,6 +36,10 @@ a url:
 http://www.tablexi.com/menu.txt
 or local file location:
 /Users/<usename>/path_to_text_file
+
+##### Note: txt file must be in the following format.
+$0.00
+value, $0.00
 ```
 
 #### Remote Option:
