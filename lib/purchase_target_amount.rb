@@ -4,12 +4,11 @@ require "../lib/drawer"
 class PurchaseTargetAmount
   extend Drawer
 
-  def self.showing_output?; true; end
-
-  def self.dynamic_solution(target_amount, menu = {hot_dog: 2.50, ham_sandwich: 3.50, beer: 5.50})
+  def self.dynamic_solution(target_amount, menu = {hot_dog: 2.50, ham_sandwich: 3.50, beer: 5.50}, output = false)
+    @output ||= output
     costs = menu.values.sort.reverse
     costs.reject! {|value| value > target_amount}
-draw("Solving for #{costs}")
+draw("Solving for #{costs}") unless @output == false
 
     possible_solutions = costs.collect do |item_cost|
       cash_left_over = target_amount - item_cost
@@ -19,9 +18,8 @@ draw("Solving for #{costs}")
     end
 
     possible_solutions.uniq!
-# draw("possible solutions b4 sort: #{possible_solutions}")
     possible_solutions.sort! { |cart_a, cart_b| cart_b.reduce(0, :+) <=> cart_a.reduce(0, :+) }
-draw("Possible solutions: #{possible_solutions}")
+draw("Possible solutions: #{possible_solutions}") unless @output == false
     possible_solutions.first || []
   end
 end

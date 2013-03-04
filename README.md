@@ -32,9 +32,16 @@ $ cd /bin/ && ./solve.rb
 ```
 At Prompt:
 enter a location of a menu file as a string. e.g.
-
 a url:
 http://www.tablexi.com/menu.txt
 or local file location:
 /Users/<usename>/path_to_text_file
+```
+
+#### Remote Option:
+Alternatively, you run the remote option which will pull a text file from TableXI
+ ```
+To Run:
+from /wallet_to_table directory:
+$ cd /bin/ && ./remote_solve.rb
 ```

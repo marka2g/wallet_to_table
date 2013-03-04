@@ -1,21 +1,12 @@
 module Drawer
-  def show_output!
-    @show_output = true
-  end
 
   def silence_output!
-    @show_outptu = false
-  end
-
-  def showing_output?
-    @show_output ||= false
+    @show_output = false
   end
 
   private
 
   def draw(text, only_if_at_base = false)
-    return unless showing_output?
-
     current_level = level
     return if only_if_at_base and current_level > 0
 
